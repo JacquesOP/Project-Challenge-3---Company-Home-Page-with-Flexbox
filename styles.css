@@ -1,0 +1,129 @@
+/* ============ FONTS ============ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+/* ============ RESET Section ============ */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 20px;
+}
+
+/* ============ VARIABLES CSS ============ */
+
+:root{
+
+    /* ========== Fonts and Typography ========== */
+    --first-font: 'Roboto', sans-serif;
+    --subtitle-font: 'Lora', serif;
+    --text-font: 'Hind Madurai', sans-serif;
+
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.72rem;
+    --h3-font-size: 1.31rem;
+    --h4-font-size: 1.25rem;
+    --h5-font-size: 1rem;
+
+    /* ====== fonts weight ====== */
+    --regular-weight: 400;
+    --medium-weight: 500;
+    --bold-weight: 700;
+
+    /* ====== colors ====== */
+    --first-color: hsl(42, 31%, 94%);
+    --first-color-darker: hsl(40, 13%, 87%);
+    --text-color: hsl(280, 2%, 25%);
+    --text-color-darker: hsl(0, 0%, 32%);
+    --green-color: hsl(159, 97%, 27%);
+    --blue-color: hsl(191, 40%, 66%);
+    --alternate-color: hsl(191, 87%, 12%);
+
+    /* ====== z-index ====== */
+    --z-index-fixed: 100;
+}
+
+/* ============ BASE ============ */
+
+h1{
+    font-family: var(--first-font);
+    font-size: var(--h1-font-size);
+}
+
+h2{
+    font-family: var(--subtitle-font);
+    font-size: var(--h2-font-size);
+}
+
+h3{
+    font-family: var(--subtitle-font);
+    font-size: var(--h3-font-size);
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+
+header{
+    width: 100%;
+    background-color: aqua;
+}
+
+/* ============ VARIABLES CSS ============ */
+.header__nav img{
+    width: 45px;
+}
+
+.header__nav{
+    position: relative;
+    background-color: red;
+    width: 59rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advertise{
+    margin-top: .2rem;
+}
+.advertise h5{
+    position: relative;
+    float: right;
+    background-color: var(--first-color);
+    padding: 0 .2rem;
+}
+
+.hero__nav{
+    width: 100%;
+    display: flex;
+}
+
+.header__logo{
+    width: 50%;
+    display: flex;
+}
+
+nav{
+    width: 50%;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
