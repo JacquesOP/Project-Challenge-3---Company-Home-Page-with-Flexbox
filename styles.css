@@ -80,9 +80,12 @@ li{
     list-style: none;
 }
 
-
 header{
     width: 100%;
+    background-color: var(--first-color);
+}
+
+main{
     background-color: var(--first-color);
 }
 
@@ -193,5 +196,91 @@ nav{
     font-family: var(--subtitle-font);
     font-weight: var(--bold-weight);
     text-transform: uppercase;
+    transition: background-color .3s;
+}
 
+.preorder:hover{
+    background-color: var(--alternate-color);
+}
+
+/* ============ carrousel section ============ */
+.carrousel{
+    background-color: var(--first-color);
+    width: 54.2rem;
+    margin: 0 auto;
+}
+
+.carrousel__quote{
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.carrousel__quote h3{
+    font-family: var(--subtitle-font);
+    font-size: var(--h4-font-size);
+    font-weight: var(--regular-weight);
+    font-style: italic;
+}
+
+.carrousel__quote h3::after{
+    content: "";
+    position: absolute;
+    bottom: 3%;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 7%;
+    background-color: var(--text-color-darker);
+}
+
+.carrousel__images{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box img{
+    width: 14rem;
+    height: 14rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: .5rem solid var(--first-color-darker);
+}
+
+.img__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 33%;
+    margin-bottom: 2rem;
+}
+
+.img__box h4,
+.img__box p{
+    width: 14rem;
+    margin: 0 auto;
+}
+
+.img__box h4{
+    position: relative;
+    font-family: var(--subtitle-font);
+    font-size: var(--h4-font-size);
+    font-weight: var(--bold-weight);
+    color: var(--text-color-darker);
+    text-transform: uppercase;
+    padding-bottom: .7rem;
+    padding-top: .7rem;
+}
+
+.box h4::after{
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    height: 2px;
+    width: 12%;
+    background-color: var(--text-color-darker);
+    left: 50%;
+    transform: translateX(-50%);
 }
