@@ -28,6 +28,8 @@ html{
     --h3-font-size: 1.31rem;
     --h4-font-size: 1.25rem;
     --h5-font-size: 1rem;
+    --h6-font-size: .735rem;
+
 
     /* ====== fonts weight ====== */
     --regular-weight: 400;
@@ -52,6 +54,7 @@ html{
 h1{
     font-family: var(--first-font);
     font-size: var(--h1-font-size);
+    font-weight: lighter;
 }
 
 h2{
@@ -80,42 +83,49 @@ li{
 
 header{
     width: 100%;
-    background-color: aqua;
+    background-color: var(--first-color);
 }
 
-/* ============ VARIABLES CSS ============ */
-.header__nav img{
-    width: 45px;
+/* ============ header ============ */
+.advertise h6{
+    position: relative;
+    float: right;
+    background-color: white;
+    padding: .2rem .3rem 0 .5rem;
+    font-family: var(--first-font);
+    font-size: .7rem;
+    margin-right: 1.4rem;
 }
 
+/* ============ header navigation ============ */
 .header__nav{
     position: relative;
-    background-color: red;
+    background-color: var(--first-color);
     width: 59rem;
+    height: 5.5rem;
     margin: 0 auto;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.advertise{
-    margin-top: .2rem;
-}
-.advertise h5{
-    position: relative;
-    float: right;
-    background-color: var(--first-color);
-    padding: 0 .2rem;
+.header__nav img{
+    width: 45px;
 }
 
 .hero__nav{
     width: 100%;
     display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .header__logo{
     width: 50%;
     display: flex;
+    justify-content: flex-start;
+    gap: .5rem;
 }
 
 nav{
@@ -125,5 +135,63 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: .7rem;
 }
 
+.nav li a{
+    font-family: var(--text-font);
+    font-weight: var(--bold-weight);
+    font-size: var(--h6-font-size);
+    color: var(--text-color-darker);
+    text-transform: uppercase;
+}
+
+.nav li:nth-last-child(1):hover{
+    text-decoration: underline;
+    text-underline-offset: .2rem;
+}
+
+/* ============ header navigation ============ */
+.banner{
+    width: 100%;
+    height: 30rem;
+    background-image: url(./img/banner-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.callout__box{
+    max-width: 59rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+    
+}
+
+.callout{
+    width: 50%;
+    height: 30rem;
+    text-align: center;
+}
+
+.description1{
+    padding-top: 22%;
+    font-size: var(--h2-font-size);
+    color: var(--text-color-darker);
+    line-height: 1.4;
+}
+
+.preorder{
+    display: block;
+    background-color: var(--green-color);
+    color: var(--first-color);
+    width: 75%;
+    margin: .5rem auto 0 auto;
+    padding: .6rem;
+    border-radius: .3rem;
+    font-family: var(--subtitle-font);
+    font-weight: var(--bold-weight);
+    text-transform: uppercase;
+
+}
