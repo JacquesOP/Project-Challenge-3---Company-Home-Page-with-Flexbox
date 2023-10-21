@@ -26,8 +26,8 @@ html{
     --h1-font-size: 2rem;
     --h2-font-size: 1.72rem;
     --h3-font-size: 1.31rem;
-    --h4-font-size: 1.25rem;
-    --h5-font-size: 1rem;
+    --h4-font-size: 1.12rem;
+    --h5-font-size: .910rem;
     --h6-font-size: .735rem;
 
 
@@ -358,3 +358,126 @@ nav{
     font-size: .5rem;
 }
 
+/* ============ footer section ============ */
+.footer__container{
+    width: 100%;
+    height: 22rem;
+    background-color: hsl(0, 0%, 2%);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__container{
+    width: 54.2rem;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.contact__container h5{
+    font-family: var(--first-font);
+    font-size: var(--h5-font-size);
+    font-weight: var(--bold-weight);
+    text-transform: uppercase;
+    padding-bottom: .3rem;
+    color: var(--first-color);
+}
+
+.contact__container p{
+    font-family: var(--text-font);
+    font-size: .7rem;
+    font-weight: var(--bold-weight);
+    color: hsl(0, 0%, 40%);
+    margin-bottom: .5rem;
+}
+
+/* ============ newsletter ============ */
+form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+#email-1{
+    display: block;
+    padding: .5rem;
+    width: 15rem;
+    border-radius: .3rem;
+    letter-spacing: 1px;
+    font-family: var(--first-font);
+    font-size: .8rem;
+}
+
+#validation{
+    display: block;
+    padding: .5rem;
+    width: 6rem;
+    font-family: var(--first-font);
+    font-weight: var(--bold-weight);
+    font-size: .8rem;
+    letter-spacing: 1px;
+    margin-right: 3rem;
+    border-radius: .3rem;
+    background-color: var(--blue-color);
+}
+
+span{
+    color: var(--blue-color);
+}
+
+/* ============ newsletter ============ */
+.newsletter{
+    width: 25rem;
+}
+
+/* ============ contact ============ */
+.contact__container a{
+    color: var(--blue-color);
+}
+
+.contact p{
+    color: var(--blue-color);
+}
+
+.contact{
+    line-height: 1.4;
+}
+
+/* ============ address ============ */
+.email a, .email p, .address{
+    font-size: .8rem;
+    font-weight: var(--bold-weight);
+}
+
+/* ============ address ============ */
+.address{
+    color: var(--blue-color);
+    padding-top: 1rem;
+}
+
+
+/* ============ social ============ */
+.social{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: var(--bold-weight);
+    line-height: 1.4;
+    padding-left: 1rem;
+}
+
+.copyright{
+    text-align: center;
+    color: var(--text-color-darker);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-top: 4rem;
+}
+
+.copyright h5{
+    font-size: var(--h5-font-size);
+}
